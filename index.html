@@ -28,129 +28,169 @@
     ></script>
   </head>
   <body>
-    <div class="book-store-home-page-bg-container">
-      <h1 class="book-store-home-page-heading">Popular Book</h1>
-      <div class="popular-card d-flex flex-row">
+    <div id="sectionHomePage">
+      <div class="book-store-home-page-bg-container">
+        <h1 class="book-store-home-page-heading">Popular Book</h1>
+        <div class="popular-card d-flex flex-row">
+          <img
+            src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/book-apj-img.png"
+            class="popular-card-image"
+          />
+          <div class="popular-mini-card">
+            <h1 class="popular-card-heading">Wings of Fire</h1>
+            <p class="popular-card-para">An Autobiography of Abdul Kalam</p>
+            <p class="popular-card-author">by Arun Tiwari</p>
+            <button
+              class="btn btn-primary"
+              onclick="display('sectionWingsOfFire')"
+            >
+              Read Now
+            </button>
+          </div>
+        </div>
+
+        <div class="recommended-books-card">
+          <h1 class="recommended-books-card-heading">Recommended Books</h1>
+          <div class="recommended-books-mini-card d-flex flex-row mb-3">
+            <img
+              src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png"
+              class="recommended-books-mini-card-img"
+            />
+            <div class="recommended-books-text-card">
+              <h1 class="recommended-books-text-card-heading">
+                The 3 mistakes of my life
+              </h1>
+              <p class="recommended-books-card-description">
+                Indian author <br />by Chetan Bhagat
+              </p>
+              <button
+                class="recommended-books-card-button btn-primary"
+                onclick="display('sectionTheThreeMistakes')"
+              >
+                Read Now
+              </button>
+            </div>
+          </div>
+          <div class="recommended-books-mini-card d-flex flex-row">
+            <img
+              src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/harrypotter-img.png"
+              class="recommended-books-mini-card-img"
+            />
+            <div class="recommended-books-text-card">
+              <h1 class="recommended-books-text-card-heading">Harry Potter</h1>
+              <p class="recommended-books-card-description">
+                and the Sorcerer's Stone <br />
+                by J.K.Rowling
+              </p>
+              <button
+                class="recommended-books-card-button btn-primary"
+                onclick="display('sectionHarryPotter')"
+              >
+                Read Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sectionWingsOfFire">
+      <div class="wings-of-fire-book-bg-container">
         <img
           src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/book-apj-img.png"
-          class="popular-card-image"
+          class="wings-of-fire-book-image mb-3"
         />
-        <div class="popular-mini-card">
-          <h1 class="popular-card-heading">Wings of Fire</h1>
-          <p class="popular-card-para">An Autobiography of Abdul Kalam</p>
-          <p class="popular-card-author">by Arun Tiwari</p>
-          <button class="btn btn-primary">Read Now</button>
-        </div>
-      </div>
-
-      <div class="recommended-books-card">
-        <h1 class="recommended-books-card-heading">Recommended Books</h1>
-        <div class="recommended-books-mini-card d-flex flex-row mb-3">
-          <img
-            src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png"
-            class="recommended-books-mini-card-img"
-          />
-          <div class="recommended-books-text-card">
-            <h1 class="recommended-books-text-card-heading">
-              The 3 mistakes of my life
-            </h1>
-            <p class="recommended-books-card-description">
-              Indian author <br />by Chetan Bhagat
-            </p>
-            <button class="recommended-books-card-button btn-primary">
-              Read Now
-            </button>
-          </div>
-        </div>
-        <div class="recommended-books-mini-card d-flex flex-row">
-          <img
-            src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/harrypotter-img.png"
-            class="recommended-books-mini-card-img"
-          />
-          <div class="recommended-books-text-card">
-            <h1 class="recommended-books-text-card-heading">Harry Potter</h1>
-            <p class="recommended-books-card-description">
-              and the Sorcerer's Stone <br />
-              by J.K.Rowling
-            </p>
-            <button class="recommended-books-card-button btn-primary">
-              Read Now
-            </button>
-          </div>
+        <h1 class="wings-of-fire-book-heading">Wings of Fire</h1>
+        <p class="wings-of-fire-book-para">by Arun Tiwari</p>
+        <p class="wings-of-fire-book-content">
+          Every common man who by his sheer grit and hard work achieves success
+          should share his story with the rest for they may find inspiration and
+          strength to go on, in his story. The 'Wings of Fire' is one such
+          autobiography by visionary scientist Dr.APJ Abdul Kalam, who from very
+          humble beginnings rose to be the President of India. The book is full
+          of insights, personal moments and life experiences of Dr.Kalam. It
+          gives us an understanding on his journey of success.
+        </p>
+        <div>
+          <button
+            class="back-button btn-warning"
+            onclick="display('sectionHomePage')"
+          >
+            Back
+          </button>
+          <button class="recommended-books-card-button btn-primary">
+            Buy Now
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="wings-of-fire-book-bg-container">
-      <img
-        src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/book-apj-img.png"
-        class="wings-of-fire-book-image mb-3"
-      />
-      <h1 class="wings-of-fire-book-heading">Wings of Fire</h1>
-      <p class="wings-of-fire-book-para">by Arun Tiwari</p>
-      <p class="wings-of-fire-book-content">
-        Every common man who by his sheer grit and hard work achieves success
-        should share his story with the rest for they may find inspiration and
-        strength to go on, in his story. The 'Wings of Fire' is one such
-        autobiography by visionary scientist Dr.APJ Abdul Kalam, who from very
-        humble beginnings rose to be the President of India. The book is full of
-        insights, personal moments and life experiences of Dr.Kalam. It gives us
-        an understanding on his journey of success.
-      </p>
-      <div>
-        <button class="back-button btn-warning">Back</button>
-        <button class="recommended-books-card-button btn-primary">
-          Buy Now
-        </button>
+    <div id="sectionTheThreeMistakes">
+      <div class="wings-of-fire-book-bg-container">
+        <img
+          src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png"
+          class="wings-of-fire-book-image mb-3"
+        />
+        <h1 class="wings-of-fire-book-heading">The 3 mistakes of my life</h1>
+        <p class="wings-of-fire-book-para">by Chetan Bhagat</p>
+        <p class="wings-of-fire-book-content">
+          The 3 Mistakes of my life is the third novel written by eminent Indian
+          Author Chetan Bhagat. Based on cricket, business and religion, the
+          novel is set against the backdrop of beautiful city Ahmadabad.
+          Revolving around three young Indian boys Omi, Ishaan and Govind, the
+          book goes on to narrate how the three are trying their best to make
+          ends meet in the city. Based on real events, the book starts with a
+          dramatic twist, where Bhagat is reading an e-mail sent by some young
+          person Govind.
+        </p>
+        <div>
+          <button
+            class="back-button btn-warning"
+            onclick="display('sectionHomePage')"
+          >
+            Back
+          </button>
+          <button class="recommended-books-card-button btn-primary">
+            Buy Now
+          </button>
+        </div>
       </div>
     </div>
 
-    <div class="wings-of-fire-book-bg-container">
-      <img
-        src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png"
-        class="wings-of-fire-book-image mb-3"
-      />
-      <h1 class="wings-of-fire-book-heading">The 3 mistakes of my life</h1>
-      <p class="wings-of-fire-book-para">by Chetan Bhagat</p>
-      <p class="wings-of-fire-book-content">
-        The 3 Mistakes of my life is the third novel written by eminent Indian
-        Author Chetan Bhagat. Based on cricket, business and religion, the novel
-        is set against the backdrop of beautiful city Ahmadabad. Revolving
-        around three young Indian boys Omi, Ishaan and Govind, the book goes on
-        to narrate how the three are trying their best to make ends meet in the
-        city. Based on real events, the book starts with a dramatic twist, where
-        Bhagat is reading an e-mail sent by some young person Govind.
-      </p>
-      <div>
-        <button class="back-button btn-warning">Back</button>
-        <button class="recommended-books-card-button btn-primary">
-          Buy Now
-        </button>
+    <div id="sectionHarryPotter">
+      <div class="wings-of-fire-book-bg-container">
+        <img
+          src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/harrypotter-img.png"
+          class="wings-of-fire-book-image mb-3"
+        />
+        <h1 class="wings-of-fire-book-heading">Harry Potter</h1>
+        <p class="wings-of-fire-book-para">by J.K.Rowling</p>
+        <p class="wings-of-fire-book-content">
+          Harry Potter's life is miserable. His parents are dead and he's stuck
+          with his heartless relatives, who force him to live in a tiny closet
+          under the stairs. But his fortune changes when he receives a letter
+          that tells him the truth about himself: he's a wizard. A mysterious
+          visitor rescues him from his relatives and takes him to his new home,
+          Hogwarts School of Witchcraft and Wizardry. After a lifetime of
+          bottling up his magical powers, Harry finally feels like a normal kid.
+        </p>
+        <div>
+          <button
+            class="back-button btn-warning"
+            onclick="display('sectionHomePage')"
+          >
+            Back
+          </button>
+          <button class="recommended-books-card-button btn-primary">
+            Buy Now
+          </button>
+        </div>
       </div>
     </div>
 
-    <div class="wings-of-fire-book-bg-container">
-      <img
-        src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/harrypotter-img.png"
-        class="wings-of-fire-book-image mb-3"
-      />
-      <h1 class="wings-of-fire-book-heading">Harry Potter</h1>
-      <p class="wings-of-fire-book-para">by J.K.Rowling</p>
-      <p class="wings-of-fire-book-content">
-        Harry Potter's life is miserable. His parents are dead and he's stuck
-        with his heartless relatives, who force him to live in a tiny closet
-        under the stairs. But his fortune changes when he receives a letter that
-        tells him the truth about himself: he's a wizard. A mysterious visitor
-        rescues him from his relatives and takes him to his new home, Hogwarts
-        School of Witchcraft and Wizardry. After a lifetime of bottling up his
-        magical powers, Harry finally feels like a normal kid.
-      </p>
-      <div>
-        <button class="back-button btn-warning">Back</button>
-        <button class="recommended-books-card-button btn-primary">
-          Buy Now
-        </button>
-      </div>
-    </div>
+    <script
+      type="text/javascript"
+      src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"
+    ></script>
   </body>
 </html>
